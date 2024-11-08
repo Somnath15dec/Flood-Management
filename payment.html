@@ -1,0 +1,81 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * { box-sizing: border-box; }
+
+         body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+         }
+        .div1 {
+            background-color: black;
+            height: 150px;
+            color: aliceblue;
+            text-align: center;
+        }
+        
+        .div1 a {
+            text-decoration: none;
+            color: rgb(215, 216, 215);
+            margin-right: 70px;
+        }
+
+        a:hover {
+            color: chartreuse;
+            font-size: 18px;
+        }
+
+        #v1 {
+            position: fixed;
+            top: 0px;
+            opacity: 0.9;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1; /* Place the video behind other content */
+        }
+
+        .div2 {
+            position: relative;
+            z-index: 1; /* Place the image above the video */
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .div2 img {
+            border-radius:65px;
+            height: 380px;
+            width: 380px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h1>Donation</h1>
+        <nav>
+            <a href="index.html">Home page</a> 
+            <a href="alarm.html">Danger Area</a>
+            <a href="equip.html">Equipment</a>
+            <a href="about.html">About Us</a>
+            <a href="step.html">Protective Steps</a>
+            <a href="Feedback.html">Feedback</a>
+        </nav>
+    </div>
+    
+    <!-- Image container above the video -->
+    <div class="div2">
+        <img src="qr code.webp" alt="QR Code">
+    </div>
+
+    <!-- Video in the background -->
+    <video autoplay muted loop src="VIDEO.mp4" id="v1"></video>
+</body>
+</html>

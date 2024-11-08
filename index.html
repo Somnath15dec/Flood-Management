@@ -1,0 +1,226 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(helper.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-color: rgb(203, 189, 189);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        .div1 {
+            text-align: center;
+            color: azure;
+            background-color: black;
+            padding: 20px 0;
+        }
+
+        .id1 {
+            font-size: larger;
+            font-style: oblique;
+        }
+
+        .div1 h1 {
+            margin: 10px 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .div1 a {
+            color: rgb(234, 241, 235);
+            text-decoration: none;
+            margin-right: 70px;
+            font-size: 1rem;
+            transition: color 0.3s, font-size 0.3s;
+        }
+
+        .div1 a:hover {
+            color: chartreuse;
+            font-size: 1.1rem;
+        }
+
+        img {
+            height: 70px;
+        }
+
+        /* Navigation menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            padding: 10px 15px;
+            text-transform: uppercase;
+        }
+
+        /* Section styles */
+        .section {
+            padding: 30px;
+            margin-right:px;
+            text-align: center;
+            font-size: medium;
+            box-sizing: border-boxx
+        }
+
+        .section img {
+            box-shadow: 0 2px 8px black;
+            height: 200px;
+            border-radius: 14px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .section h3 {
+            float: right;
+        }
+
+        #div2, #div4 {
+            height: 350px;
+            width: 600px;
+            box-shadow: 0 2px 8px rgb(12, 12, 12);
+            background-color: black;
+            border-radius: 14px;
+            margin-left: 450px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #div2 img, #div4 img {
+            max-width: 500px;
+            height:300px;
+        }
+
+        /* Quote block */
+        blockquote {
+            font-size: 1.2rem;
+            color: white;
+            
+        }
+
+        #div3, #div5 {
+            height: 70px;
+            width: 100%;
+            color: #f8f5ec;
+            box-shadow: 3px 5px 8px rgb(3, 3, 3);
+
+            background-color:black(9, 9, 9);
+            border-radius: 14px;
+            margin-right: 100px;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 20px;
+        }
+
+        /* Footer styles */
+        footer {
+            padding: 20px;
+            background-color: #3e2723;
+            width: 100%;
+            color: #f8f5ec;
+            text-align: center;
+        }
+
+        footer h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .social-icons img {
+            width: 50px;
+            height: 50px;
+            margin: 0 15px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        footer p {
+            font-size: 1rem;
+            margin-top: 15px;
+        }
+
+        /* Ensuring layout responsiveness */
+        @media (max-width: 768px) {
+            .section img {
+                height: 150px;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+
+            #div2, #div4 {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="div1">
+        <div class="id1">
+            <img src="https://i.pinimg.com/564x/ec/0d/6d/ec0d6d7553a5236542868553c32726cc.jpg" alt="logo">
+            <h1>PLEH</h1>
+        </div>
+        <div>
+            <ul>
+                <nav>
+                    <a href="alarm.html">Danger Area</a>
+                    <a href="equip.html">Equipment</a>
+                    <a href="payment.html">Donation</a>
+                    <a href="step.html">Protective Steps</a>
+                    <a href="about.html">About Us</a>
+                    <a href="Feedback.html">Feedback</a>
+                </nav>
+            </ul>
+        </div>
+    </header> <br><br><br>
+
+    <div class="section" id="div2">
+        <img src="https://media.istockphoto.com/id/840710978/photo/flood-protection-sandbags-with-flooded-homes-in-the-background.jpg?s=612x612&w=0&k=20&c=1tJBGiyFX675s7yFgpZVITXPk_UDwm9XyiAFkksRKwQ=" alt="Flood Protection">
+        <div id="div3">
+            <blockquote>
+                "Floods may wash away much, but they reveal the depths of kindness and courage in those who step up to help."
+            </blockquote>
+        </div>
+    </div><br><br>
+
+    <div class="section" id="div4">
+        <img src="gAtonCSbQO-aAKA-SxGiiA.webp" alt="Flood Management">
+        <div id="div5">
+            <blockquote>
+                "Alone we can do so little; together we can do so much."
+            </blockquote>
+        </div>
+    </div>
+    <br><br>
+    <footer>
+        <h2><b>PLEH</b></h2>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-logo-png-6381.png" alt="Facebook"></a>
+            <a href="#"><img src="email-logo-png-34042.png" alt="Mail"></a>
+            <a href="#"><img src="Pinterest-logo.png" alt="Pinterest"></a>
+            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; Copyright 2024</p>
+    </footer>
+</body>
+</html>
